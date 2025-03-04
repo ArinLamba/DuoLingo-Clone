@@ -3,7 +3,7 @@ import { cn } from "@/lib/utils";
 import { Check } from "lucide-react";
 
 type Props = {
-  	title: string;
+  title: string;
 	id: number;
 	imageSrc: string;
 	onClick: (id: number) => void;

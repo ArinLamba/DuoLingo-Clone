@@ -2,7 +2,7 @@ import { MobileHeader } from "@/components/mobile-header";
 import { Sidebar } from "@/components/sidebar";
 
 type Props = {
-    children: React.ReactNode;
+  children: React.ReactNode;
 };
 
 const MainLayout = ({children}: Props) => {

@@ -5,10 +5,10 @@ import { courses } from "@/db/schema";
 import { Button } from "@/components/ui/button";
 
 type Props = {
-    activeCourse : typeof courses.$inferSelect;
-    hearts : number;
-    points : number;
-    hasActiveSubscription: boolean;
+  activeCourse : typeof courses.$inferSelect;
+  hearts : number;
+  points : number;
+  hasActiveSubscription: boolean;
 };
 
 export const UserProgress = ({ 
@@ -28,6 +28,7 @@ export const UserProgress = ({
             width={32}
             height={32}
           />
+          
         </Button>
       </Link>
 
