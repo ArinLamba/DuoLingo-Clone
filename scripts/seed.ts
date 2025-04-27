@@ -18,6 +18,7 @@ const main = async () => {
 		await db.delete(schema.challenges);
 		await db.delete(schema.challengeOptions);
 		await db.delete(schema.challengeProgress);
+		await db.delete(schema.userSubscription);
     
 		await db.insert(schema.courses).values([
 			{
@@ -117,6 +118,13 @@ const main = async () => {
         order: 3,
         question: 'Which one of these is the "the robot"?"',
       },
+      {
+        id: 4,
+        lessonId: 1, // Nouns
+        type: "SELECT",
+        order: 4,
+        question: '"the boy"',
+      },
     ]);
 
     await db.insert(schema.challengeOptions).values([
@@ -188,6 +196,77 @@ const main = async () => {
       },
     ]);
 
+    await db.insert(schema.challengeOptions).values([
+      {
+        challengeId: 4, // which one of these is "the boy"
+        imageSrc: "/girl.svg",
+        correct: false,
+        text: "la niña",
+        audioSrc: "/es_girl.mp3",
+      },
+      {
+        challengeId: 4, // which one of these is "the boy"
+        imageSrc: "/boy.svg",
+        correct: true,
+        text: "el niño",
+        audioSrc: "/es_boy.mp3",
+      },
+      {
+        challengeId: 4, // which one of these is "the boy"
+        imageSrc: "/robot.svg",
+        correct: false,
+        text: "el robot",
+        audioSrc: "/es_robot.mp3",
+      },
+    ]);
+
+// first lesson
+
+    await db.insert(schema.challenges).values([
+      {
+        id: 5,
+        lessonId: 2, // Verbs
+        type: "ASSIST",
+        order: 1,
+        question: '"the man"',
+      },
+      {
+        id: 6,
+        lessonId: 2, // Verbs
+        type: "ASSIST",
+        order: 2,
+        question: '"the man"',
+      },
+      {
+        id: 7,
+        lessonId: 2, // Verbs
+        type: "SELECT",
+        order: 3,
+        question: 'Which one of these is the "the robot"?"',
+      },
+    ]);
+
+    await db.insert(schema.challengeOptions).values([
+      {
+        challengeId: 5, //"the man"
+        correct: true,
+        text: "Un hombre",
+        audioSrc: "/es_man.mp3",
+      },
+      {
+        challengeId: 5, //"the woman"
+        correct: false,
+        text: "la mujer",
+        audioSrc: "/es_woman.mp3",
+      },
+      {
+        challengeId: 5, //"the robot"
+        correct: false,
+        text: "el robot",
+        audioSrc: "/es_robot.mp3",
+      },
+    ]);
+    
 		console.log("Seeding finished");
 
 	} catch (error) {

@@ -12,6 +12,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 export default function Home() {
+
   const buttonUpContent = (
     <Button size="lg" variant="secondary" className="w-full">
       Get Started
@@ -67,4 +68,4 @@ export default function Home() {
       </div>
     </div>
   );
-}
+};

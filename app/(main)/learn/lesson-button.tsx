@@ -36,7 +36,7 @@ export const LessonButton = ({
     indentationLevel = 4 - cycleIndex;
   } else if(cycleIndex <= 6) {
     indentationLevel = 4 - cycleIndex;
-  } else {``
+  } else {
     indentationLevel = cycleIndex - 8;
   }
 
