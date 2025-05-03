@@ -5,7 +5,15 @@
 ![Lingo - Interactive platform for language learning.](/.github/images/img_main.png "Lingo - Interactive platform for language learning.")
 
 
-[![Follow Me](https://img.shields.io/github/followers/sanidhyy?style=social&label=Follow&maxAge=2592000)](https://github.com/ArinLamba "Follow Me")
+[![Linked In](https://img.shields.io/github/followers/sanidhyy?style=social&label=Follow&maxAge=2592000)](https://www.linkedin.com/in/arin-lamba/ "Linked In")
+## Contact Me
+
+<a href="mailto:youremail@example.com">
+  <img src="https://example.com/path-to-your-image.png" alt="Email Me" style="width: 150px; height: auto;">
+</a>
+
+
+[![Follow Me](https://img.shields.io/linkedin/followers/sanidhyy?style=social&label=Follow&maxAge=2592000)](https://github.com/ArinLamba "Follow Me")
 <!-- Table of Contents -->
 <details>
 
