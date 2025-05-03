@@ -5,7 +5,7 @@
 ![Lingo - Interactive platform for language learning.](/.github/images/img_main.png "Lingo - Interactive platform for language learning.")
 
 
-[![Linked In](/.github/images/linked.png](https://www.linkedin.com/in/arin-lamba/ "Linked In")
+[![Linked In](/.github/images/linked.png)](https://www.linkedin.com/in/arin-lamba/ "Linked In")
 ## Contact Me
 
 <a href="mailto:honeyxlamba48@gmail.com">
