@@ -4,13 +4,12 @@
 
 ![Lingo - Interactive platform for language learning.](/.github/images/img_main.png "Lingo - Interactive platform for language learning.")
 
-
-[![Linked In](/.github/images/linked.png)](https://www.linkedin.com/in/arin-lamba/ "Linked In")
 ## Contact Me
 
-<a href="mailto:honeyxlamba48@gmail.com">
-  <img src="/.github/images/gmail.png" alt="Email Me" style="width: 150px; height: auto;">
-</a>
+[![Linked In](/.github/images/linked.png)](https://www.linkedin.com/in/arin-lamba/ "Linked In")
+
+[![Email](/.github/images/gmail.png)](mailto:honeyxlamba48@gmail.com)
+
 
 
 <!-- Table of Contents -->
