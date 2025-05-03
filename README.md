@@ -8,8 +8,6 @@
 
 [![Linked In](/.github/images/linked.png)](https://www.linkedin.com/in/arin-lamba/ "Linked In")
 
-[![Email](/.github/images/gmail.png)](mailto:honeyxlamba48@gmail.com)
-
 
 
 <!-- Table of Contents -->
