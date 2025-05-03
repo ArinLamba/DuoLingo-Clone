@@ -4,6 +4,8 @@
 
 ![Lingo - Interactive platform for language learning.](/.github/images/img_main.png "Lingo - Interactive platform for language learning.")
 
+
+[![Follow Me](https://img.shields.io/github/followers/sanidhyy?style=social&label=Follow&maxAge=2592000)](https://github.com/ArinLamba "Follow Me")
 <!-- Table of Contents -->
 <details>
 
