@@ -9,11 +9,10 @@
 ## Contact Me
 
 <a href="mailto:youremail@example.com">
-  <img src="/.github/images/mail.svg" alt="Email Me" style="width: 150px; height: auto;">
+  <img src="/.github/images/gmail.png" alt="Email Me" style="width: 150px; height: auto;">
 </a>
 
 
-[![Follow Me](https://img.shields.io/linkedin/followers/sanidhyy?style=social&label=Follow&maxAge=2592000)](https://github.com/ArinLamba "Follow Me")
 <!-- Table of Contents -->
 <details>
 
