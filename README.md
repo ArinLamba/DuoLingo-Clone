@@ -8,7 +8,7 @@
 [![Linked In](https://img.shields.io/github/followers/sanidhyy?style=social&label=Follow&maxAge=2592000)](https://www.linkedin.com/in/arin-lamba/ "Linked In")
 ## Contact Me
 
-<a href="mailto:honeyxlamba48@gmail.com">
+<a href="honeyxlamba48@gmail.com">
   <img src="/.github/images/gmail.png" alt="Email Me" style="width: 150px; height: auto;">
 </a>
 
