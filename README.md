@@ -9,7 +9,7 @@
 ## Contact Me
 
 <a href="mailto:youremail@example.com">
-  <img src="https://example.com/path-to-your-image.png" alt="Email Me" style="width: 150px; height: auto;">
+  <img src="/.github/images/mail.svg" alt="Email Me" style="width: 150px; height: auto;">
 </a>
 
 
