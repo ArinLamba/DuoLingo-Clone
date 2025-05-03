@@ -4,17 +4,21 @@ import { getLesson, getUserProgress, getUserSubscription } from '@/db/queries';
 
 import { Quiz } from '../quiz';
 
+
 type Props = {
-  params: {
-    lessonId: number;
-  };
+  params: 
+    Promise<Record<string, string>>
+  
 };
 
 const LessonIdPage = async ({
   params,
 }: Props) => {
 
-  const lessonData = getLesson(params.lessonId);
+  const resolvedParams = await params;
+  const lessonNewId = parseInt(resolvedParams.lessonId, 10);
+  
+  const lessonData = getLesson(lessonNewId);
   const userProgressData = getUserProgress();
   const userSubscriptionData = await getUserSubscription();
 

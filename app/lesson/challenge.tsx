@@ -30,7 +30,6 @@ export const Challenge = ({
       {options.map((option, i) => (
         <Card
           key={option.id}
-          id={option.id}
           text={option.text}
           imageSrc={option.imageSrc}
           shortcut={`${i + 1}`}
