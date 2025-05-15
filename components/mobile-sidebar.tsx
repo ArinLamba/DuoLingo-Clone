@@ -8,8 +8,6 @@ import {
 import { Sidebar } from "@/components/sidebar"
 import { DialogTitle } from "@radix-ui/react-dialog"
 
-import Image from "next/image"
-
 export const MobileSidebar = () => {
 	return (
 		<Sheet>
