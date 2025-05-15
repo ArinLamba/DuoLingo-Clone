@@ -8,7 +8,6 @@ import { Quiz } from '../quiz';
 type Props = {
   params: 
     Promise<Record<string, string>>
-  
 };
 
 const LessonIdPage = async ({
