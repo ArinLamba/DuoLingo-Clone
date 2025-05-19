@@ -67,7 +67,7 @@ export const Items = ({
             pending || hearts === 5 || points < POINTS_TO_REFILL
           }
         >
-          {hearts === 5 ? (
+          {hearts === 5 && hasActiveSubscription ?  (
            "full"
           ) : (
             <div className="flex items-center">

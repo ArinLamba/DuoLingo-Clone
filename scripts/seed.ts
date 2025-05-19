@@ -24,32 +24,32 @@ const main = async () => {
 			{
         id: 1,
         title: "Spanish",
-        imageSrc: "/es.svg",
+        imageSrc: "/assets/flags/es.svg",
       },
       {
         id: 2,
         title: "Germany",
-        imageSrc: "/gr.svg",
+        imageSrc: "/assets/flags/gr.svg",
       },
       {
         id: 3,
         title: "French",
-        imageSrc: "/fr.svg",
+        imageSrc: "/assets/flags/fr.svg",
       },
       {
         id: 4,
         title: "Italian",
-        imageSrc: "/it.svg",
+        imageSrc: "/assets/flags/it.svg",
       },
       {
         id: 5,
         title: "Japanese",
-        imageSrc: "/jp.svg",
+        imageSrc: "/assets/flags/jp.svg",
       },
       {
         id: 6,
         title: "Hindi",
-        imageSrc: "/in.svg",
+        imageSrc: "/assets/flags/in.svg",
       },
 		]);
 

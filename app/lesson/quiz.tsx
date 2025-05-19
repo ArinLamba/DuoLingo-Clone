@@ -53,19 +53,19 @@ export const Quiz = ({
 
   const router = useRouter();
 
-  const [finishAudio] = useAudio({ src: "/finish.mp3", autoPlay: true});
+  const [finishAudio] = useAudio({ src: "/assets/commonAudios/finish.mp3", autoPlay: true});
   const [
     correctAudio,
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     _c,
     correctControls,
-  ] = useAudio({ src: "/correct.wav"});
+  ] = useAudio({ src: "/assets/commonAudios/correct.wav"});
   const [
     incorrectAudio,
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     _i,
     incorrectControls,
-  ] = useAudio({ src: "/incorrect.wav"});
+  ] = useAudio({ src: "/assets/commonAudios/incorrect.wav"});
 
   const [pending, startTransition] = useTransition();
 

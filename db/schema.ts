@@ -1,3 +1,4 @@
+import { MAX_HEARTS } from "@/constants";
 import { relations } from "drizzle-orm";
 import { boolean, integer, pgEnum, pgTable, serial, text, timestamp } from "drizzle-orm/pg-core";
 
@@ -15,7 +16,7 @@ export const coursesRelations = relations(courses, ({ many }) => ({
 export const units = pgTable("units", {
   id: serial("id").primaryKey(),
   title: text("title").notNull(), // Unit 1
-  description: text("descroption").notNull(), // Learn the basics of Spanish
+  description: text("description").notNull(), // Learn the basics of Spanish
   courseId: integer("course_id").references(() => courses.id, {onDelete: "cascade"}).notNull(),
   order: integer("order").notNull(),
 });
@@ -35,7 +36,7 @@ export const lessons = pgTable("lessons", {
   order: integer("order").notNull(),
 });
 
-export const lessonsRelations = relations(lessons, ({ one, many}) => ({
+export const lessonsRelations = relations(lessons, ({ one, many }) => ({
   unit: one(units, {
     fields: [lessons.unitId],
     references: [units.id],
@@ -53,7 +54,7 @@ export const challenges = pgTable("challenges", {
   order: integer("order").notNull(),
 });
 
-export const challengesRelations = relations(challenges, ({ one, many}) => ({
+export const challengesRelations = relations(challenges, ({ one, many }) => ({
   lesson: one(lessons, {
     fields: [challenges.lessonId],
     references: [lessons.id],
@@ -99,7 +100,7 @@ export const userProgress = pgTable("user_progress", {
     activeCourseId: integer("active_course_id").references(() => courses.id, {
       onDelete: "cascade",
     }),
-    hearts: integer("hearts").notNull().default(5),
+    hearts: integer("hearts").notNull().default(MAX_HEARTS),
     points: integer("points").notNull().default(0),
   });
   

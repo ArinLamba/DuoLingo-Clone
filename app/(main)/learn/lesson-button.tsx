@@ -35,7 +35,7 @@ export const LessonButton = ({
   } else if(cycleIndex <= 4) {
     indentationLevel = 4 - cycleIndex;
   } else if(cycleIndex <= 6) {
-    indentationLevel = 4 - cycleIndex;
+    indentationLevel = 6 - cycleIndex;
   } else {
     indentationLevel = cycleIndex - 8;
   }
@@ -64,7 +64,7 @@ export const LessonButton = ({
       >
         {current ? (
           <div className="h-[102px] w-[102px] relative">
-            <div className="absolute -top-6 left-2.5 px-3 py-2.5 border-2 font-bold uppercase text-green-500 bg-white rounded-xl animate-bounce tracking-wide z-10"
+            <div className="absolute -top-7 left-2.5 px-3 py-2.5 border-2 font-bold uppercase text-green-500 bg-white rounded-xl animate-bounce tracking-wide z-10"
             >
               Start
               <div 
@@ -107,7 +107,7 @@ export const LessonButton = ({
               >
                 <Icon 
                   className={cn(
-                    "h-12 w-12 scale-125",
+                    "h-24 w-24 scale-125",
                     locked 
                     ? "fill-neutral-400 text-neutral-400 stroke-neutral-400"
                     : "fill-primary-foreground text-primary-foreground",
