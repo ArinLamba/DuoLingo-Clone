@@ -17,6 +17,7 @@ import {
 
 import { Unit } from "./unit";
 import { Header } from "./header";
+import { MobileHeader } from "./mobile-header";
 
 const LearnPage = async () => {
   const userProgressData = getUserProgress();
@@ -65,10 +66,20 @@ const LearnPage = async () => {
       </StickyWrapper>
 
       <FeedWrapper>
-        <Header 
-          title = {userProgress.activeCourse.title}
-          courseImg = {userProgress.activeCourse.imageSrc}  
-        />
+        <div className="hidden lg:block">
+          <Header
+            title = {userProgress.activeCourse.title}
+            courseImg = {userProgress.activeCourse.imageSrc}
+          />
+        </div>
+        <div className="lg:hidden block">
+          <MobileHeader
+          courseImg = {userProgress.activeCourse.imageSrc}
+          hearts = {userProgress.hearts}
+          points = {userProgress.points}
+          hasActiveSubscription = {isPro}
+          />
+        </div>
         {units.map((unit) => (
           <div key={unit.id} className="mb-10">
             <Unit

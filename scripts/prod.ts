@@ -11,6 +11,10 @@ const db = drizzle(sql, { schema });
 const main = async () => {
   try {
     console.log("Seeding database");
+    
+    const getAssetPath = (file: string) => {
+      return `/courses/spanish/unit-1/lesson-1/${file}`;
+    };
 
     // Delete all existing data
     await Promise.all([
@@ -126,22 +130,22 @@ const main = async () => {
                   challengeId: challenge.id,
                   correct: true,
                   text: "el hombre",
-                  imageSrc: "/courses/spanish/unit-1/lesson-1/man.svg",
-                  audioSrc: "/courses/spanish/unit-1/lesson-1/es_man.mp3",
+                  imageSrc: getAssetPath("man.svg"),
+                  audioSrc: getAssetPath("es_man.mp3"),
                 },
                 {
                   challengeId: challenge.id,
                   correct: false,
                   text: "la mujer",
-                  imageSrc: "/courses/spanish/unit-1/lesson-1/woman.svg",
-                  audioSrc: "/courses/spanish/unit-1/lesson-1/es_woman.mp3",
+                  imageSrc: getAssetPath("woman.svg"),
+                  audioSrc: getAssetPath("es_woman.mp3"),
                 },
                 {
                   challengeId: challenge.id,
                   correct: false,
                   text: "el nino",
-                  imageSrc: "/courses/spanish/unit-1/lesson-1/boy.svg",
-                  audioSrc: "/courses/spanish/unit-1/lesson-1/es_boy.mp3",
+                  imageSrc: getAssetPath("boy.svg"),
+                  audioSrc: getAssetPath("es_boy.mp3"),
                 },
               ]);
             }
@@ -152,22 +156,22 @@ const main = async () => {
                   challengeId: challenge.id,
                   correct: true,
                   text: "la mujer",
-                  imageSrc: "/courses/spanish/unit-1/lesson-1/woman.svg",
-                  audioSrc: "/courses/spanish/unit-1/lesson-1/es_woman.mp3",
+                  imageSrc: getAssetPath("woman.svg"),
+                  audioSrc: getAssetPath("es_woman.mp3"),
                 },
                 {
                   challengeId: challenge.id,
                   correct: false,
                   text: "el nino",
-                  imageSrc: "/courses/spanish/unit-1/lesson-1/boy.svg",
-                  audioSrc: "/courses/spanish/unit-1/lesson-1/es_boy.mp3",
+                  imageSrc: getAssetPath("boy.svg"),
+                  audioSrc: getAssetPath("es_boy.mp3"),
                 },
                 {
                   challengeId: challenge.id,
                   correct: false,
                   text: "el hombre",
-                  imageSrc: "/courses/spanish/unit-1/lesson-1/man.svg",
-                  audioSrc: "/courses/spanish/unit-1/lesson-1/es_man.mp3",
+                  imageSrc: getAssetPath("man.svg"),
+                  audioSrc: getAssetPath("es_man.mp3"),
                 },
               ]);
             }
@@ -178,22 +182,22 @@ const main = async () => {
                   challengeId: challenge.id,
                   correct: false,
                   text: "la mujer",
-                  imageSrc: "/courses/spanish/unit-1/lesson-1/woman.svg",
-                  audioSrc: "/courses/spanish/unit-1/lesson-1/es_woman.mp3",
+                  imageSrc: getAssetPath("woman.svg"),
+                  audioSrc: getAssetPath("es_woman.mp3"),
                 },
                 {
                   challengeId: challenge.id,
                   correct: false,
                   text: "el hombre",
-                  imageSrc: "/courses/spanish/unit-1/lesson-1/man.svg",
-                  audioSrc: "/courses/spanish/unit-1/lesson-1/es_man.mp3",
+                  imageSrc: getAssetPath("man.svg"),
+                  audioSrc: getAssetPath("es_man.mp3"),
                 },
                 {
                   challengeId: challenge.id,
                   correct: true,
                   text: "el nino",
-                  imageSrc: "/courses/spanish/unit-1/lesson-1/boy.svg",
-                  audioSrc: "/courses/spanish/unit-1/lesson-1/es_boy.mp3",
+                  imageSrc: getAssetPath("boy.svg"),
+                  audioSrc: getAssetPath("es_boy.mp3"),
                 },
               ]);
             }
@@ -204,19 +208,19 @@ const main = async () => {
                   challengeId: challenge.id,
                   correct: false,
                   text: "la mujer",
-                  audioSrc: "/courses/spanish/unit-1/lesson-1/es_woman.mp3",
+                  audioSrc: getAssetPath("es_woman.mp3"),
                 },
                 {
                   challengeId: challenge.id,
                   correct: true,
                   text: "el hombre",
-                  audioSrc: "/courses/spanish/unit-1/lesson-1/es_man.mp3",
+                  audioSrc: getAssetPath("es_man.mp3"),
                 },
                 {
                   challengeId: challenge.id,
                   correct: false,
                   text: "el nino",
-                  audioSrc: "/courses/spanish/unit-1/lesson-1/es_boy.mp3",
+                  audioSrc: getAssetPath("es_boy.mp3"),
                 },
               ]);
             }
@@ -227,22 +231,22 @@ const main = async () => {
                   challengeId: challenge.id,
                   correct: false,
                   text: "el hombre",
-                  imageSrc: "/courses/spanish/unit-1/lesson-1/man.svg",
-                  audioSrc: "/courses/spanish/unit-1/lesson-1/es_man.mp3",
+                  imageSrc: getAssetPath("man.svg"),
+                  audioSrc: getAssetPath("es_man.mp3"),
                 },
                 {
                   challengeId: challenge.id,
                   correct: false,
                   text: "la mujer",
-                  imageSrc: "/courses/spanish/unit-1/lesson-1/woman.svg",
-                  audioSrc: "/courses/spanish/unit-1/lesson-1/es_woman.mp3",
+                  imageSrc: getAssetPath("woman.svg"),
+                  audioSrc: getAssetPath("es_woman.mp3"),
                 },
                 {
                   challengeId: challenge.id,
                   correct: true,
                   text: "el zombie",
-                  imageSrc: "/courses/spanish/unit-1/lesson-1/zombie.svg",
-                  audioSrc: "/courses/spanish/unit-1/lesson-1/es_zombie.mp3",
+                  imageSrc: getAssetPath("zombie.svg"),
+                  audioSrc: getAssetPath("es_zombie.mp3"),
                 },
               ]);
             }
@@ -253,22 +257,22 @@ const main = async () => {
                   challengeId: challenge.id,
                   correct: true,
                   text: "el robot",
-                  imageSrc: "/courses/spanish/unit-1/lesson-1/robot.svg",
-                  audioSrc: "/courses/spanish/unit-1/lesson-1/es_robot.mp3",
+                  imageSrc: getAssetPath("robot.svg"),
+                  audioSrc: getAssetPath("es_robot.mp3"),
                 },
                 {
                   challengeId: challenge.id,
                   correct: false,
                   text: "el zombie",
-                  imageSrc: "/courses/spanish/unit-1/lesson-1/zombie.svg",
-                  audioSrc: "/courses/spanish/unit-1/lesson-1/es_zombie.mp3",
+                  imageSrc: getAssetPath("zombie.svg"),
+                  audioSrc: getAssetPath("es_zombie.mp3"),
                 },
                 {
                   challengeId: challenge.id,
                   correct: false,
                   text: "el nino",
-                  imageSrc: "/courses/spanish/unit-1/lesson-1/boy.svg",
-                  audioSrc: "/courses/spanish/unit-1/lesson-1/es_boy.mp3",
+                  imageSrc: getAssetPath("boy.svg"),
+                  audioSrc: getAssetPath("es_boy.mp3"),
                 },
               ]);
             }
@@ -279,22 +283,22 @@ const main = async () => {
                   challengeId: challenge.id,
                   correct: true,
                   text: "la nina",
-                  imageSrc: "/courses/spanish/unit-1/lesson-1/girl.svg",
-                  audioSrc: "/courses/spanish/unit-1/lesson-1/es_girl.mp3",
+                  imageSrc: getAssetPath("girl.svg"),
+                  audioSrc: getAssetPath("es_girl.mp3"),
                 },
                 {
                   challengeId: challenge.id,
                   correct: false,
                   text: "el zombie",
-                  imageSrc: "/courses/spanish/unit-1/lesson-1/zombie.svg",
-                  audioSrc: "/courses/spanish/unit-1/lesson-1/es_zombie.mp3",
+                  imageSrc: getAssetPath("zombie.svg"),
+                  audioSrc: getAssetPath("es_zombie.mp3"),
                 },
                 {
                   challengeId: challenge.id,
                   correct: false,
                   text: "el hombre",
-                  imageSrc: "/courses/spanish/unit-1/lesson-1/man.svg",
-                  audioSrc: "/courses/spanish/unit-1/lesson-1/es_man.mp3",
+                  imageSrc: getAssetPath("man.svg"),
+                  audioSrc: getAssetPath("es_man.mp3"),
                 },
               ]);
             }
@@ -305,19 +309,19 @@ const main = async () => {
                   challengeId: challenge.id,
                   correct: false,
                   text: "la mujer",
-                  audioSrc: "/courses/spanish/unit-1/lesson-1/es_woman.mp3",
+                  audioSrc: getAssetPath("es_woman.mp3"),
                 },
                 {
                   challengeId: challenge.id,
                   correct: true,
                   text: "el zombie",
-                  audioSrc: "/courses/spanish/unit-1/lesson-1/es_zombie.mp3",
+                  audioSrc: getAssetPath("es_zombie.mp3"),
                 },
                 {
                   challengeId: challenge.id,
                   correct: false,
                   text: "el nino",
-                  audioSrc: "/courses/spanish/unit-1/lesson-1/es_boy.mp3",
+                  audioSrc: getAssetPath("es_boy.mp3"),
                 },
               ]);
             }
