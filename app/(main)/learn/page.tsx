@@ -48,6 +48,7 @@ const LearnPage = async () => {
     redirect("/courses");
   }
 
+
   const  isPro = !!userSubscription?.isActive;
 
   return (
@@ -66,13 +67,13 @@ const LearnPage = async () => {
       </StickyWrapper>
 
       <FeedWrapper>
-        <div className="hidden lg:block">
+        <div className="hidden md:block">
           <Header
             title = {userProgress.activeCourse.title}
             courseImg = {userProgress.activeCourse.imageSrc}
-          />
+            />
         </div>
-        <div className="lg:hidden block">
+        <div className="block md:hidden">
           <MobileHeader
           courseImg = {userProgress.activeCourse.imageSrc}
           hearts = {userProgress.hearts}
@@ -80,6 +81,7 @@ const LearnPage = async () => {
           hasActiveSubscription = {isPro}
           />
         </div>
+        
         {units.map((unit) => (
           <div key={unit.id} className="mb-10">
             <Unit

@@ -17,7 +17,7 @@ export const MobileHeader = ({
   hasActiveSubscription
  }: Props) => {
   return (
-    <div className="sticky top-0 bg-white pb-3 lg:pt-[28px] lg:mt-[-28px] flex items-center justify-between border-b-2 mb-5 text-neutral-400 lg:z-50">
+    <div className="sticky top-0 bg-white pb-3 md:pt-[28px] md:mt-[-28px] flex items-center justify-between border-b-2 mb-5 text-neutral-400 md:z-50">
       <Link href="/courses">
         <Button variant="ghost" size="sm">
           <Image
@@ -45,7 +45,7 @@ export const MobileHeader = ({
           { hasActiveSubscription ?  <InfinityIcon className="h-4 w-4 stroke-[3]"/> : hearts }
         </Button>
       </Link>
-      <div className="hidden lg:block"/>
+      <div className="hidden md:block"/>
     </div>
   );
 };

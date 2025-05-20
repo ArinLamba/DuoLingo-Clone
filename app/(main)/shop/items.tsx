@@ -56,7 +56,7 @@ export const Items = ({
         />
 
         <div className="flex-1">
-          <p className="text-neutral-700 text-base lg:text-xl font-bold">
+          <p className="text-neutral-700 text-base md:text-xl font-bold">
             Refill Hearts
           </p>
         </div>
@@ -93,7 +93,7 @@ export const Items = ({
           width={60}
         />
         <div className="flex-1">
-          <p className="text-neutral-700 text-base lg:text-xl font-bold">
+          <p className="text-neutral-700 text-base md:text-xl font-bold">
             Unlimited Hearts
           </p>
         </div>
